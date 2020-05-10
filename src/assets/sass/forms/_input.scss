@@ -1,0 +1,71 @@
+.form-group {
+  margin-bottom: 24px;
+  label {
+    font-family: $font_bold;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe1e5;
+    border-radius: 0;
+    &:hover,
+    &:focus {
+      box-shadow: unset;
+      outline: none;
+    }
+    &::placeholder {
+      color: rgba($color: $color__dark, $alpha: 0.6);
+    }
+  }
+}
+.file {
+  width: 160px;
+  height: 111px;
+  background-color: rgba($color: #d8d8d8, $alpha: 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 26px;
+}
+.input-file {
+  text-align: center;
+  input {
+    position: absolute;
+  }
+  .input-file-label {
+    display: inline-block;
+    width: 115px;
+    padding: 8px 0;
+    text-align: center;
+    background-color: $color__dark;
+    color: $color__lighter;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4px;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-family: $font_regular;
+  }
+  .file-name,
+  .file-size {
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.4px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

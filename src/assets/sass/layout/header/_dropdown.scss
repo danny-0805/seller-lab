@@ -1,0 +1,64 @@
+.dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  span,
+  .dropdown-toggle {
+    display: flex;
+  }
+
+  &:hover {
+    & > .dropdown-menu {
+      opacity: 1;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      pointer-events: initial;
+    }
+  }
+}
+.dropdown-toggle {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.dropdown-toggle::after {
+  content: url("../images/icons/chevron.svg");
+  border: none;
+  vertical-align: unset;
+}
+
+.dropdown-menu {
+  display: block;
+  margin-top: 2px;
+  left: 0;
+  border: none;
+  border-radius: 0;
+  opacity: 0;
+  top: 100%;
+  opacity: 0;
+  padding: 10px 0;
+  background-color: $color__lighter;
+  -webkit-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  box-shadow: 0 0 30px 0 rgba($color: $color__dark, $alpha: 0.1);
+  z-index: 1000;
+  pointer-events: none;
+  white-space: nowrap;
+  position: absolute;
+  .dropdown-item {
+    padding: 15px 40px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    a {
+      color: inherit;
+      text-decoration: unset;
+    }
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}

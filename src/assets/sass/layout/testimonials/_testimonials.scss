@@ -1,0 +1,16 @@
+.testimonials {
+  background-color: $color__dark;
+  background-image: url("../images/testimonials-pattern.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .section-title {
+    color: $color__lighter;
+    margin-bottom: 50px;
+  }
+  .testimonial-card {
+    width: auto !important;
+    margin: 0 15px;
+  }
+}
+@import "testimonial-card";

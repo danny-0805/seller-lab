@@ -1,0 +1,21 @@
+.navbar {
+  font-size: 14px;
+  background-color: transparent;
+  padding: 20px 15px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  text-transform: capitalize;
+  .nav-item {
+    margin-left: 24px;
+  }
+  &.light-bg {
+    background-color: $color__light;
+    box-shadow: 0 0px 14px rgba(36, 35, 33, 0.22);
+    -webkit-box-shadow: 0 0px 14px rgba(36, 35, 33, 0.22);
+  }
+  .navbar-brand {
+    img {
+      width: 104px;
+    }
+  }
+}

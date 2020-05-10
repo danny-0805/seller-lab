@@ -1,0 +1,52 @@
+a.btn,
+.btn {
+  background-color: $color__dark;
+  border-color: $color__dark;
+  color: $color__light;
+  border-radius: 0;
+  padding: 11px 36px !important;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  &:hover,
+  &:focus {
+    outline: unset;
+    box-shadow: unset;
+    opacity: 0.9;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.btn-light {
+    background-color: $color__light;
+    color: $color__dark;
+    border-color: $color__light;
+    &:hover {
+      background-color: $color__light !important;
+      border-color: $color__light;
+    }
+  }
+  &.btn-border {
+    border: 1px solid $color__dark;
+    color: $color__dark;
+    background-color: transparent;
+  }
+  &.btn-google {
+    padding: 6px 15px !important;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    .icon {
+      color: #eb4335;
+      margin-right: 30px;
+    }
+  }
+  &.btn-twitter {
+    padding: 6px 15px !important;
+    margin-bottom: 8px;
+    .icon {
+      margin-right: 30px;
+      color: #55acee;
+    }
+  }
+}

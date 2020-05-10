@@ -1,0 +1,66 @@
+.custom-switch {
+  padding-right: 2.25rem;
+  padding-left: 0;
+  .custom-control-label {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    display: block;
+    img {
+      margin-right: 16px;
+    }
+    &::before {
+      right: -2.25rem;
+      width: 1.75rem;
+      left: auto;
+      pointer-events: all;
+      background-color: rgba($color: $color__dark, $alpha: 0.1);
+      height: 2px;
+      border-radius: 0;
+      top: 0.75rem;
+      z-index: 1;
+    }
+    &::after {
+      left: auto;
+      top: calc(0.25rem + 2px);
+      right: calc(-1rem - 2px);
+      width: calc(1rem - 4px);
+      height: calc(1rem - 4px);
+      border-radius: 50%;
+      z-index: 2;
+      background-color: #c4c4c4;
+
+      transition: background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        -webkit-transform 0.15s ease-in-out;
+      transition: transform 0.15s ease-in-out,
+        background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+      transition: transform 0.15s ease-in-out,
+        background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+    }
+  }
+
+  .custom-control-input {
+    &:checked {
+      & ~ .custom-control-label {
+        &::after {
+          background-color: $color__dark;
+          -webkit-transform: translateX(1.1rem);
+          transform: translateX(1.1rem);
+        }
+        &::before {
+          background-color: rgba($color: $color__dark, $alpha: 0.1);
+          outline: unset;
+          box-shadow: unset;
+        }
+      }
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .custom-switch .custom-control-label::after {
+    transition: none;
+  }
+}

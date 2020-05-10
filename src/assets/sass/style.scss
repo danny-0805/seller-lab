@@ -1,0 +1,68 @@
+// fonts
+@font-face {
+  font-family: "QuincyCF-Black";
+  src: url("../fonts/QuincyCF-Black.eot");
+  src: url("../fonts/QuincyCF-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/QuincyCF-Black.svg#QuincyCF-Black") format("svg"),
+    url("../fonts/QuincyCF-Black.ttf") format("truetype"),
+    url("../fonts/QuincyCF-Black.woff") format("woff"),
+    url("../fonts/QuincyCF-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuincyCF-Bold";
+  src: url("../fonts/QuincyCF-Bold.eot");
+  src: url("../fonts/QuincyCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/QuincyCF-Bold.svg#QuincyCF-Bold") format("svg"),
+    url("../fonts/QuincyCF-Bold.ttf") format("truetype"),
+    url("../fonts/QuincyCF-Bold.woff") format("woff"),
+    url("../fonts/QuincyCF-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuincyCF-Light";
+  src: url("../fonts/QuincyCF-Light.eot");
+  src: url("../fonts/QuincyCF-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/QuincyCF-Light.svg#QuincyCF-Light") format("svg"),
+    url("../fonts/QuincyCF-Light.ttf") format("truetype"),
+    url("../fonts/QuincyCF-Light.woff") format("woff"),
+    url("../fonts/QuincyCF-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuincyCF-Regular";
+  src: url("../fonts/QuincyCF-Regular.eot");
+  src: url("../fonts/QuincyCF-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/QuincyCF-Regular.svg#QuincyCF-Regular") format("svg"),
+    url("../fonts/QuincyCF-Regular.ttf") format("truetype"),
+    url("../fonts/QuincyCF-Regular.woff") format("woff"),
+    url("../fonts/QuincyCF-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "QuincyCF-Thin";
+  src: url("../fonts/QuincyCF-Thin.eot");
+  src: url("../fonts/QuincyCF-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/QuincyCF-Thin.svg#QuincyCF-Thin") format("svg"),
+    url("../fonts/QuincyCF-Thin.ttf") format("truetype"),
+    url("../fonts/QuincyCF-Thin.woff") format("woff"),
+    url("../fonts/QuincyCF-Thin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "variables-site/variables-site";
+@import "layout/layout";
+@import "forms/forms";
+
+/*# Colors*/
+@import "modules/colors";
+@import "modules/links";

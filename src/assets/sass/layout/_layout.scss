@@ -1,0 +1,45 @@
+body {
+  font-family: $font_regular;
+  font-size: 14px;
+  line-height: 20px;
+
+  letter-spacing: 0.4px;
+}
+
+section {
+  padding: 100px 0;
+  .section-title {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+  .section-desc {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    margin-bottom: 40px;
+  }
+  .fixed-width {
+    max-width: 360px;
+  }
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@import "header/header";
+@import "join/join";
+@import "why/why";
+@import "usage-card/usage-card";
+@import "testimonials/testimonials";
+@import "partners/partners";
+@import "download/download";
+@import "footer/footer";
+@import "no-layout/no-layout";
+@import "media-queries/media-queries";

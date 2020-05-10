@@ -1,0 +1,2 @@
+export const SET_LOADING_STATUS = "SET_LOADING_STATUS"
+export const SET_LANG = "SET_LANG"

@@ -1,0 +1,21 @@
+.dark {
+  background-color: $color__dark;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.text-dark {
+  &,
+  a {
+    color: $color__darker;
+  }
+}
+
+.text-light {
+  &,
+  a {
+    color: #fff;
+  }
+}

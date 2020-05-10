@@ -1,0 +1,45 @@
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../images/flags@2x.png");
+  }
+}
+
+.iti {
+  display: block;
+}
+
+.iti input,
+.iti input[type="tel"],
+.iti input[type="text"] {
+  padding-left: 90px !important;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    outline: unset;
+  }
+}
+
+.iti__arrow {
+  background-image: url("../images/icons/chevron.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  width: 8px;
+  height: 8px;
+  border: none;
+}
+.iti__country-list {
+  border: none;
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+}

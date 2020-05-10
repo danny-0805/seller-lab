@@ -1,0 +1,29 @@
+.custom-checkbox {
+  .custom-control-label {
+    &::before {
+      border-radius: 0;
+    }
+    &::after {
+      background-size: 75% 75%;
+    }
+  }
+}
+.custom-checkbox {
+  .custom-control-input {
+    &:checked {
+      & ~ .custom-control-label {
+        &::before {
+          box-shadow: unset;
+          outline: none;
+          background-color: $color__dark;
+        }
+        &::after {
+          background-image: url("../images/icons/checkbox.svg");
+          background-color: $color__dark;
+          box-shadow: unset;
+          outline: none;
+        }
+      }
+    }
+  }
+}

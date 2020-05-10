@@ -1,0 +1,48 @@
+.accordion {
+  .btn {
+    background-color: transparent;
+    color: $color__dark;
+    display: block;
+    padding: 8px 0 !important;
+    min-width: 100%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: none;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    .icon-box {
+      line-height: 28px;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      font-size: 14px;
+      right: 0;
+    }
+  }
+  .card {
+    border-radius: 0;
+    border: none;
+
+    .card-header {
+      border-bottom: 1px solid rgba($color: $color__dark, $alpha: 0.1);
+      background-color: transparent;
+      padding: 0;
+    }
+    .card-body {
+      padding: 8px 0 16px;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      color: #232122;
+      opacity: 0.6;
+    }
+  }
+}

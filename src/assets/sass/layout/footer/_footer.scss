@@ -1,0 +1,22 @@
+footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  ul {
+    li {
+      &:after {
+        content: "-";
+      }
+      &:last-of-type {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}

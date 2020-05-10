@@ -1,0 +1,19 @@
+.download {
+  background-color: $color__light;
+  .fixed-width {
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 457px;
+  }
+
+  h2 {
+    font-size: 45px;
+    line-height: 56px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+
+  .download-links {
+    margin-bottom: 0;
+  }
+}
